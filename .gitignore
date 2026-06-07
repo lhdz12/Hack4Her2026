@@ -1,0 +1,13 @@
+# Variables de entorno
+.env
+.env.*
+
+# Todos los CSV
+*.csv
+
+# Carpeta data completa
+data/
+
+# O si está en una ruta específica
+# src/data/
+# backend/data/
