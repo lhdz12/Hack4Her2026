@@ -1,0 +1,11 @@
+body {
+    background-color: #ffe6f0; /* Fondo rosa claro */
+    color: #4a154b; /* Texto morado */
+}
+h1, h2, h3 {
+    color: #d63384;
+}
+.stButton > button {
+    background-color: #d63384;
+    color: white;
+}
