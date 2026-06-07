@@ -318,6 +318,7 @@ if st.button("Predecir Churn"):
         st.markdown("**Tendencia de ventas (cajas por mes)**")
         hist_cliente = df_test[df_test['customer_id'] == selected_id][['calmonth', 'uni_boxes_sold_m']].copy()
         if not hist_cliente.empty:
+            hist_cliente['calmonth'] = pd.to_datetime(hist_cliente['calmonth'].astype(str), format='%Y%m')
             hist_cliente = hist_cliente.sort_values('calmonth').rename(
                 columns={'calmonth': 'Mes', 'uni_boxes_sold_m': 'Cajas vendidas'}
             )
